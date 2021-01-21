@@ -1,0 +1,505 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{93b056af-c8ca-43b9-a8c1-183aa0f7d2ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="シェーダー">
+      <UniqueIdentifier>{3047d139-b701-418c-97e9-9b6f92475194}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\エンジン">
+      <UniqueIdentifier>{68a75463-6b4f-4124-82d2-620ce187f917}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\エンジン\ECS">
+      <UniqueIdentifier>{7e353f47-516f-47b1-9506-c101a303e5b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\エンジン\System">
+      <UniqueIdentifier>{44d01232-2b5d-44f3-b100-9f237a0c709f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\エンジン\ECS\Object">
+      <UniqueIdentifier>{2e9ead22-90f3-43b7-a96b-d92d71376280}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\エンジン\ECS\Entity">
+      <UniqueIdentifier>{49d6beeb-8f7d-4215-b516-0b90f6746771}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\エンジン\ECS\Component">
+      <UniqueIdentifier>{692d1f84-cd51-410b-a20b-3798551abcb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\エンジン\ECS\World">
+      <UniqueIdentifier>{cc7d9122-3f8c-4fc1-8020-10746702a97d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\エンジン\ECS\System">
+      <UniqueIdentifier>{1d1a2805-7c9b-4ca8-b042-b7a6cc35a356}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\エンジン\ECSComponent">
+      <UniqueIdentifier>{d5b47eb0-bfac-4c0e-af95-c60d60c3ccd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\エンジン\ECSEntity">
+      <UniqueIdentifier>{5ef95526-4a26-4180-8e22-2502ab85b059}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\エンジン\ECSSystem">
+      <UniqueIdentifier>{15aae978-86ad-4437-963c-fd6ac79369f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\エンジン\Renderer">
+      <UniqueIdentifier>{8d3e5d06-bcab-4e53-9eed-e4e12a5722bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\スクリプト">
+      <UniqueIdentifier>{e0fd2763-76bb-4bd9-a8d6-564299cecf64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\ゲームオブジェクト">
+      <UniqueIdentifier>{8312bb02-83ed-4055-b583-6177a84d8e07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\スクリプト\エネミー">
+      <UniqueIdentifier>{345eacf7-13a1-4bee-be8a-c94b9381abe8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\スクリプト\プレイヤー">
+      <UniqueIdentifier>{bc8a34fb-062c-4a76-9468-85aa60ef724c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\スクリプト\タイトル">
+      <UniqueIdentifier>{33f7bcea-b82a-4d99-b2b1-96e742baa283}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\スクリプト\デルタ">
+      <UniqueIdentifier>{8ccb7f78-1cbc-4bde-b112-818ad56ac2c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\エンジン\ECSWorld">
+      <UniqueIdentifier>{849c0083-341d-4005-82aa-b39e0537ca24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\ワールド">
+      <UniqueIdentifier>{47eceebe-3966-4fb8-b5f9-9d4234afed09}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DX11Game.rc">
+      <Filter>リソース ファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\delta.ico">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="source\HLSL\AssimpPixel.hlsl">
+      <Filter>シェーダー</Filter>
+    </FxCompile>
+    <FxCompile Include="source\HLSL\AssimpVertex.hlsl">
+      <Filter>シェーダー</Filter>
+    </FxCompile>
+    <FxCompile Include="source\HLSL\Pixel.hlsl">
+      <Filter>シェーダー</Filter>
+    </FxCompile>
+    <FxCompile Include="source\HLSL\Pixel2D.hlsl">
+      <Filter>シェーダー</Filter>
+    </FxCompile>
+    <FxCompile Include="source\HLSL\Vertex.hlsl">
+      <Filter>シェーダー</Filter>
+    </FxCompile>
+    <FxCompile Include="source\HLSL\Vertex2D.hlsl">
+      <Filter>シェーダー</Filter>
+    </FxCompile>
+    <FxCompile Include="Source\HLSL\InstancingPixel.hlsl">
+      <Filter>シェーダー</Filter>
+    </FxCompile>
+    <FxCompile Include="Source\HLSL\InstancingVertex.hlsl">
+      <Filter>シェーダー</Filter>
+    </FxCompile>
+    <FxCompile Include="Source\HLSL\PostPixel2D.hlsl">
+      <Filter>シェーダー</Filter>
+    </FxCompile>
+    <FxCompile Include="Source\HLSL\PostVertex2D.hlsl">
+      <Filter>シェーダー</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Engine\main.cpp">
+      <Filter>ソース\エンジン</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\System\debugproc.cpp">
+      <Filter>ソース\エンジン\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\System\input.cpp">
+      <Filter>ソース\エンジン\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\System\polygon.cpp">
+      <Filter>ソース\エンジン\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\System\Shader.cpp">
+      <Filter>ソース\エンジン\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\System\Sound.cpp">
+      <Filter>ソース\エンジン\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\System\Texture.cpp">
+      <Filter>ソース\エンジン\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\ECS\uniqueTypeID.cpp">
+      <Filter>ソース\エンジン\ECS</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\ECS\Object\ObjectManager.cpp">
+      <Filter>ソース\エンジン\ECS\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\ECS\Entity\IEntity.cpp">
+      <Filter>ソース\エンジン\ECS\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\ECS\Component\IComponent.cpp">
+      <Filter>ソース\エンジン\ECS\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\ECS\Entity\EntityManager.cpp">
+      <Filter>ソース\エンジン\ECS\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\ECS\Object\IObject.cpp">
+      <Filter>ソース\エンジン\ECS\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\ECS\World\World.cpp">
+      <Filter>ソース\エンジン\ECS\World</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\ECSCompoent\Transform.cpp">
+      <Filter>ソース\エンジン\ECSComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\ECSSystem\TransformSystem.cpp">
+      <Filter>ソース\エンジン\ECSSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\ECSCompoent\Renderer.cpp">
+      <Filter>ソース\エンジン\ECSComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\ECSSystem\RendererSystem.cpp">
+      <Filter>ソース\エンジン\ECSSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\Renderer\AssimpModel.cpp">
+      <Filter>ソース\エンジン\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\Renderer\Camera.cpp">
+      <Filter>ソース\エンジン\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\Renderer\Light.cpp">
+      <Filter>ソース\エンジン\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\Renderer\mesh.cpp">
+      <Filter>ソース\エンジン\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\ECSCompoent\MeshRenderer.cpp">
+      <Filter>ソース\エンジン\ECSComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\ECSCompoent\Collider.cpp">
+      <Filter>ソース\エンジン\ECSComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\ECSSystem\CollisionSystem.cpp">
+      <Filter>ソース\エンジン\ECSSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\ECSCompoent\BoxCollider.cpp">
+      <Filter>ソース\エンジン\ECSComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\ECSCompoent\SphereCollider.cpp">
+      <Filter>ソース\エンジン\ECSComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\ECSCompoent\Script.cpp">
+      <Filter>ソース\エンジン\ECSComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\ECSSystem\ScriptSystem.cpp">
+      <Filter>ソース\エンジン\ECSSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\ECSEntity\GameObject.cpp">
+      <Filter>ソース\エンジン\ECSEntity</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scripts\ScriptBaseLayout.cpp">
+      <Filter>ソース\スクリプト</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\ECSCompoent\Rigidbody.cpp">
+      <Filter>ソース\エンジン\ECSComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\ECSSystem\RigidbodySystem.cpp">
+      <Filter>ソース\エンジン\ECSSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\ECSCompoent\SpriteRenderer.cpp">
+      <Filter>ソース\エンジン\ECSComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\ECSCompoent\Animation2D.cpp">
+      <Filter>ソース\エンジン\ECSComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\ECSSystem\Animation2DSystem.cpp">
+      <Filter>ソース\エンジン\ECSSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\ECSCompoent\Animator2D.cpp">
+      <Filter>ソース\エンジン\ECSComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\ECSCompoent\AssimpRenderer.cpp">
+      <Filter>ソース\エンジン\ECSComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\ECSCompoent\BillboardRenderer.cpp">
+      <Filter>ソース\エンジン\ECSComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\Renderer\instancingMesh .cpp">
+      <Filter>ソース\エンジン\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\ECSCompoent\InstancingMeshRenderer.cpp">
+      <Filter>ソース\エンジン\ECSComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\ECSSystem\DeltaCollisionSystem.cpp">
+      <Filter>ソース\エンジン\ECSSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\ECSCompoent\DeltaCollider.cpp">
+      <Filter>ソース\エンジン\ECSComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\ECS\System\ISystem.cpp">
+      <Filter>ソース\エンジン\ECS\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\ECS\World\WorldManager.cpp">
+      <Filter>ソース\エンジン\ECS\World</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scripts\FadeScript.cpp">
+      <Filter>ソース\スクリプト</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\Renderer\PostProcessing.cpp">
+      <Filter>ソース\エンジン\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\ECSCompoent\SkyDomeRenderer.cpp">
+      <Filter>ソース\エンジン\ECSComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scripts\BulletScript.cpp">
+      <Filter>ソース\スクリプト\プレイヤー</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scripts\DeltaUIScript.cpp">
+      <Filter>ソース\スクリプト\デルタ</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scripts\EnemyBaseScript.cpp">
+      <Filter>ソース\スクリプト\エネミー</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scripts\MakeEnemyScript.cpp">
+      <Filter>ソース\スクリプト\エネミー</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scripts\PlayerScript.cpp">
+      <Filter>ソース\スクリプト\プレイヤー</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scripts\TitleButtonScript.cpp">
+      <Filter>ソース\スクリプト\タイトル</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scripts\TitleScoreUIScript.cpp">
+      <Filter>ソース\スクリプト\タイトル</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scripts\EnemyEffectScript.cpp">
+      <Filter>ソース\スクリプト\エネミー</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scripts\GameOverScript.cpp">
+      <Filter>ソース\スクリプト</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\ECSWorld\MasterWorld.cpp">
+      <Filter>ソース\エンジン\ECSWorld</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\World\GameWorld.cpp">
+      <Filter>ソース\ワールド</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\World\TitleWorld.cpp">
+      <Filter>ソース\ワールド</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scripts\EnemyBulletScript.cpp">
+      <Filter>ソース\スクリプト\エネミー</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scripts\HitEffectScript.cpp">
+      <Filter>ソース\スクリプト\デルタ</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Engine\main.h">
+      <Filter>ソース\エンジン</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\System\debugproc.h">
+      <Filter>ソース\エンジン\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\System\input.h">
+      <Filter>ソース\エンジン\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\System\Math.h">
+      <Filter>ソース\エンジン\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\System\polygon.h">
+      <Filter>ソース\エンジン\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\System\Shader.h">
+      <Filter>ソース\エンジン\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\System\Sound.h">
+      <Filter>ソース\エンジン\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\System\Texture.h">
+      <Filter>ソース\エンジン\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\ECS\uniqueTypeID.h">
+      <Filter>ソース\エンジン\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\ECS\Object\ObjectManager.h">
+      <Filter>ソース\エンジン\ECS\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\ECS\Entity\IEntity.h">
+      <Filter>ソース\エンジン\ECS\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\ECS\Component\IComponent.h">
+      <Filter>ソース\エンジン\ECS\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\ECS\Entity\EntityManager.h">
+      <Filter>ソース\エンジン\ECS\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\ECS\Object\IObject.h">
+      <Filter>ソース\エンジン\ECS\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\ECS\Object\Object.h">
+      <Filter>ソース\エンジン\ECS\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\ECS\World\World.h">
+      <Filter>ソース\エンジン\ECS\World</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\ECSCompoent\Transform.h">
+      <Filter>ソース\エンジン\ECSComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\ECSSystem\TransformSystem.h">
+      <Filter>ソース\エンジン\ECSSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\ECSCompoent\Renderer.h">
+      <Filter>ソース\エンジン\ECSComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\ECSSystem\RendererSystem.h">
+      <Filter>ソース\エンジン\ECSSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\Renderer\AssimpModel.h">
+      <Filter>ソース\エンジン\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\Renderer\Camera.h">
+      <Filter>ソース\エンジン\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\Renderer\Light.h">
+      <Filter>ソース\エンジン\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\Renderer\mesh.h">
+      <Filter>ソース\エンジン\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\ECSCompoent\MeshRenderer.h">
+      <Filter>ソース\エンジン\ECSComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\ECSCompoent\Collider.h">
+      <Filter>ソース\エンジン\ECSComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\ECSSystem\CollisionSystem.h">
+      <Filter>ソース\エンジン\ECSSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\ECSCompoent\BoxCollider.h">
+      <Filter>ソース\エンジン\ECSComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\ECSCompoent\SphereCollider.h">
+      <Filter>ソース\エンジン\ECSComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\ECSCompoent\Script.h">
+      <Filter>ソース\エンジン\ECSComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\ECSSystem\ScriptSystem.h">
+      <Filter>ソース\エンジン\ECSSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\ECSEntity\GameObject.h">
+      <Filter>ソース\エンジン\ECSEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scripts\ScriptBaseLayout.h">
+      <Filter>ソース\スクリプト</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\ECSCompoent\Rigidbody.h">
+      <Filter>ソース\エンジン\ECSComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\ECSSystem\RigidbodySystem.h">
+      <Filter>ソース\エンジン\ECSSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\ECSCompoent\SpriteRenderer.h">
+      <Filter>ソース\エンジン\ECSComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\ECSCompoent\Animation2D.h">
+      <Filter>ソース\エンジン\ECSComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\ECSSystem\Animation2DSystem.h">
+      <Filter>ソース\エンジン\ECSSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\ECSCompoent\Animator2D.h">
+      <Filter>ソース\エンジン\ECSComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\ECSCompoent\AssimpRenderer.h">
+      <Filter>ソース\エンジン\ECSComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\ECSCompoent\BillboardRenderer.h">
+      <Filter>ソース\エンジン\ECSComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\Renderer\instancingMesh.h">
+      <Filter>ソース\エンジン\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\ECSCompoent\InstancingMeshRenderer.h">
+      <Filter>ソース\エンジン\ECSComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\System\CCell.h">
+      <Filter>ソース\エンジン\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\ECSSystem\DeltaCollisionSystem.h">
+      <Filter>ソース\エンジン\ECSSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\ECSCompoent\DeltaCollider.h">
+      <Filter>ソース\エンジン\ECSComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\ECS\System\ISystem.h">
+      <Filter>ソース\エンジン\ECS\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\ECS\System\System.h">
+      <Filter>ソース\エンジン\ECS\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\ECS\World\WorldManager.h">
+      <Filter>ソース\エンジン\ECS\World</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scripts\FadeScript.h">
+      <Filter>ソース\スクリプト</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\Renderer\PostProcessing.h">
+      <Filter>ソース\エンジン\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\ECSCompoent\SkyDomeRenderer.h">
+      <Filter>ソース\エンジン\ECSComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scripts\BulletScript.h">
+      <Filter>ソース\スクリプト\プレイヤー</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scripts\DeltaUIScript.h">
+      <Filter>ソース\スクリプト\デルタ</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scripts\EnemyBaseScript.h">
+      <Filter>ソース\スクリプト\エネミー</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scripts\MakeEnemyScript.h">
+      <Filter>ソース\スクリプト\エネミー</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scripts\PlayerScript.h">
+      <Filter>ソース\スクリプト\プレイヤー</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scripts\TitleButtonScript.h">
+      <Filter>ソース\スクリプト\タイトル</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scripts\TitleScoreUIScript.h">
+      <Filter>ソース\スクリプト\タイトル</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scripts\EnemyEffectScript.h">
+      <Filter>ソース\スクリプト\エネミー</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scripts\GameOverScript.h">
+      <Filter>ソース\スクリプト</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\ECSWorld\MasterWorld.h">
+      <Filter>ソース\エンジン\ECSWorld</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\World\GameWorld.h">
+      <Filter>ソース\ワールド</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\World\TitleWorld.h">
+      <Filter>ソース\ワールド</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scripts\EnemyBulletScript.h">
+      <Filter>ソース\スクリプト\エネミー</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scripts\HitEffectScript.h">
+      <Filter>ソース\スクリプト\デルタ</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
