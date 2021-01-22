@@ -648,13 +648,13 @@ void Draw(void)
 	SetZBuffer(false);
 
 
-#ifdef _DEBUG
+//#ifdef _DEBUG
 	// デバッグ文字列表示
 	SetBlendState(BS_ALPHABLEND);
 	SetPolygonColor(1.0f, 1.0f, 1.0f);
 	DrawDebugProc();
 	SetBlendState(BS_NONE);
-#endif // _DEBUG
+//#endif // _DEBUG
 
 	// バックバッファとフロントバッファの入れ替え
 	g_pSwapChain->Present(g_uSyncInterval, 0);

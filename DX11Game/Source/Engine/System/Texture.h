@@ -82,8 +82,8 @@ public:
 	}
 	
 private:
-	static std::map<const char*, ID3D11ShaderResourceView*> m_texturePool_c;
-	static std::map<const wchar_t*, ID3D11ShaderResourceView*> m_texturePool_w;
+	static std::map<const std::string, ID3D11ShaderResourceView*> m_texturePool_c;
+	static std::map<const std::wstring, ID3D11ShaderResourceView*> m_texturePool_w;
 
 	static HRESULT CreateTextureFromFile(_In_ ID3D11Device* d3dDevice,
 		_In_z_ const wchar_t* szFileName,

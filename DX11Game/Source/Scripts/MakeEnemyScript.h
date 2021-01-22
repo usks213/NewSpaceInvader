@@ -43,6 +43,8 @@ namespace ECS
 
 		// エネミー配列
 		std::vector<std::weak_ptr<EnemyBaseScript>> m_aEnemy;
+		// エネミー数
+		int m_nEnemyCount;
 
 		// 移動向き
 		bool m_bRightMove;
@@ -73,5 +75,7 @@ namespace ECS
 		void SetPlayer(std::weak_ptr<GameObject> player) { m_player = player; }
 		// 移動向きの更新
 		void UpdateMoveDir();
+		// エネミー減少
+		void SubEnemyCnt() { m_nEnemyCount--; }
 	};
 }

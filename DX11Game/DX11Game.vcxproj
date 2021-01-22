@@ -326,6 +326,8 @@
     <ClCompile Include="Source\Scripts\GameOverScript.cpp" />
     <ClCompile Include="Source\Scripts\HitEffectScript.cpp" />
     <ClCompile Include="Source\Scripts\MakeEnemyScript.cpp" />
+    <ClCompile Include="Source\Scripts\MakePillboxScript.cpp" />
+    <ClCompile Include="Source\Scripts\PillboxScript.cpp" />
     <ClCompile Include="Source\Scripts\PlayerScript.cpp" />
     <ClCompile Include="Source\Scripts\ScriptBaseLayout.cpp" />
     <ClCompile Include="Source\Scripts\TitleButtonScript.cpp" />
@@ -394,6 +396,8 @@
     <ClInclude Include="Source\Scripts\GameOverScript.h" />
     <ClInclude Include="Source\Scripts\HitEffectScript.h" />
     <ClInclude Include="Source\Scripts\MakeEnemyScript.h" />
+    <ClInclude Include="Source\Scripts\MakePillboxScript.h" />
+    <ClInclude Include="Source\Scripts\PillboxScript.h" />
     <ClInclude Include="Source\Scripts\PlayerScript.h" />
     <ClInclude Include="Source\Scripts\ScriptBaseLayout.h" />
     <ClInclude Include="Source\Scripts\TitleButtonScript.h" />

@@ -132,8 +132,8 @@ CollisionSystem::~CollisionSystem()
 //===================================
 void CollisionSystem::OnCreate()
 {
-	// マップサイズ // 何故か二倍になってる？　現状9600x9600
-	CCell<Collider>::SetMapSize(100.0f * 8 * 4, 100.0f * 8 * 4);
+	// マップサイズ // 何故か二倍になってる？
+	CCell<Collider>::SetMapSize(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2);
 }
 
 //===================================
@@ -155,6 +155,8 @@ void CollisionSystem::OnUpdate()
 	DWORD wLeftTop = 0;
 	DWORD wRightDown = 0;
 
+	// オフセット
+	CCell<Collider>::SetOffSet(0, 0);
 
 	// 空間分割 + 状態更新
 	std::for_each(m_ComponentList.begin(), m_ComponentList.end(),
@@ -173,6 +175,11 @@ void CollisionSystem::OnUpdate()
 			// 左上と右下を出す
 			wLeftTop = CCell<Collider>::GetPointElem(boxMin1->x, boxMin1->z);
 			wRightDown = CCell<Collider>::GetPointElem(boxMax1->x, boxMax1->z);
+			if (wLeftTop >= nMaxCell - 1 || wRightDown >= nMaxCell - 1)
+			{
+				return;
+			}
+
 			// XORをとる	
 			Def = wLeftTop ^ wRightDown;
 			unsigned int HiLevel = 0;

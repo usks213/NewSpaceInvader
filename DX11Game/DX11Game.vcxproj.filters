@@ -62,14 +62,14 @@
     <Filter Include="ソース\スクリプト\タイトル">
       <UniqueIdentifier>{33f7bcea-b82a-4d99-b2b1-96e742baa283}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース\スクリプト\デルタ">
-      <UniqueIdentifier>{8ccb7f78-1cbc-4bde-b112-818ad56ac2c7}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース\エンジン\ECSWorld">
       <UniqueIdentifier>{849c0083-341d-4005-82aa-b39e0537ca24}</UniqueIdentifier>
     </Filter>
     <Filter Include="ソース\ワールド">
       <UniqueIdentifier>{47eceebe-3966-4fb8-b5f9-9d4234afed09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\スクリプト\ゲーム">
+      <UniqueIdentifier>{8ccb7f78-1cbc-4bde-b112-818ad56ac2c7}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -263,7 +263,7 @@
       <Filter>ソース\スクリプト\プレイヤー</Filter>
     </ClCompile>
     <ClCompile Include="Source\Scripts\DeltaUIScript.cpp">
-      <Filter>ソース\スクリプト\デルタ</Filter>
+      <Filter>ソース\スクリプト\ゲーム</Filter>
     </ClCompile>
     <ClCompile Include="Source\Scripts\EnemyBaseScript.cpp">
       <Filter>ソース\スクリプト\エネミー</Filter>
@@ -299,7 +299,13 @@
       <Filter>ソース\スクリプト\エネミー</Filter>
     </ClCompile>
     <ClCompile Include="Source\Scripts\HitEffectScript.cpp">
-      <Filter>ソース\スクリプト\デルタ</Filter>
+      <Filter>ソース\スクリプト\ゲーム</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scripts\PillboxScript.cpp">
+      <Filter>ソース\スクリプト\ゲーム</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scripts\MakePillboxScript.cpp">
+      <Filter>ソース\スクリプト\ゲーム</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -463,7 +469,7 @@
       <Filter>ソース\スクリプト\プレイヤー</Filter>
     </ClInclude>
     <ClInclude Include="Source\Scripts\DeltaUIScript.h">
-      <Filter>ソース\スクリプト\デルタ</Filter>
+      <Filter>ソース\スクリプト\ゲーム</Filter>
     </ClInclude>
     <ClInclude Include="Source\Scripts\EnemyBaseScript.h">
       <Filter>ソース\スクリプト\エネミー</Filter>
@@ -499,7 +505,13 @@
       <Filter>ソース\スクリプト\エネミー</Filter>
     </ClInclude>
     <ClInclude Include="Source\Scripts\HitEffectScript.h">
-      <Filter>ソース\スクリプト\デルタ</Filter>
+      <Filter>ソース\スクリプト\ゲーム</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scripts\PillboxScript.h">
+      <Filter>ソース\スクリプト\ゲーム</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scripts\MakePillboxScript.h">
+      <Filter>ソース\スクリプト\ゲーム</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -30,6 +30,7 @@
 #include "../Scripts/PlayerScript.h"
 #include "../Scripts/MakeEnemyScript.h"
 #include "../Scripts/DeltaUIScript.h"
+#include "../Scripts/MakePillboxScript.h"
 
 
 using namespace ECS;
@@ -84,6 +85,10 @@ void GameWorld::Start()
 	const auto& enemyMaker = GetEntityManager()->CreateEntity<GameObject>();
 	enemyMaker->AddComponent<MakeEnemyScript>()->SetPlayer(player);
 	
+	// トーチカ作成
+	const auto& pillbox = GetEntityManager()->CreateEntity<GameObject>();
+	pillbox->AddComponent<MakePillboxScript>();
+
 	//// カーソル
 	//const auto& cursor = GetEntityManager()->CreateEntity<GameObject>();
 	//const auto& cursorRn = cursor->AddComponent<SpriteRenderer>();

@@ -9,8 +9,8 @@ using namespace DirectX;
 
 
 // Ã“Iƒƒ“ƒo
-std::map<const char*, ID3D11ShaderResourceView*> CTexture::m_texturePool_c;
-std::map<const wchar_t*, ID3D11ShaderResourceView*> CTexture::m_texturePool_w;
+std::map<const std::string, ID3D11ShaderResourceView*> CTexture::m_texturePool_c;
+std::map<const std::wstring, ID3D11ShaderResourceView*> CTexture::m_texturePool_w;
 
 
 

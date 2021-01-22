@@ -163,10 +163,10 @@ void EnemyBaseScript::SetTexure(int nType)
 		m_sprite.lock()->SetDiffuseTexture("data/texture/Enemy1.png");
 		break;
 	case 1:
-		m_sprite.lock()->SetDiffuseTexture("data/texture/Enemy2.png");
+		m_sprite.lock()->SetDiffuseTexture("data/texture/Enemy3.png");
 		break;
 	case 2:
-		m_sprite.lock()->SetDiffuseTexture("data/texture/Enemy3.png");
+		m_sprite.lock()->SetDiffuseTexture("data/texture/Enemy2.png");
 		break;
 	default:
 		break;
@@ -198,6 +198,9 @@ void EnemyBaseScript::OnCollisionEnter(Collider* collider)
 			dir = dir.RotationZ(i * angle);
 			rb->AddForce(dir * SCREEN_SCALE_X);
 		}
+
+		// エネミー数減少
+		m_enemyMaker.lock()->SubEnemyCnt();
 
 		// 削除
 		Destroy(gameObject().lock());

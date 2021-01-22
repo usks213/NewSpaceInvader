@@ -39,17 +39,10 @@
 #include "../Engine/ECSCompoent/BoxCollider.h"
 #include "../Engine/ECSCompoent/SphereCollider.h"
 
-// ECSコンポーネント
-#include "../Engine/ECSCompoent/Rigidbody.h"
-#include "../Engine/ECSCompoent/DeltaCollider.h"
-
-// ECSシステム
-#include "../Engine/ECSSystem/RigidbodySystem.h"
-#include "../Engine/ECSSystem/DeltaCollisionSystem.h"
-
 // スクリプト
 #include "PlayerScript.h"
 #include "EnemyBaseScript.h"
+#include "GameOverScript.h"
 
 
 
@@ -115,6 +108,10 @@ void MakeEnemyScript::Start()
 		pos->x  = initPosX;
 		pos->y -= ENEMY_OFFSET_Y;
 	}
+
+	// エネミー数
+	m_nEnemyCount = MAX_ENEMY_NUM * 1.5f;
+
 }
 
 //========================================
@@ -127,10 +124,14 @@ void MakeEnemyScript::Update()
 	// 移動処理
 	m_nMoveCount--;
 	if (m_nMoveCount >= 0) return;
-	m_nMoveCount = MOVE_INTAERVAL;
+
+	m_nMoveCount = m_nEnemyCount;
+	if (m_nMoveCount < 10) m_nMoveCount = 10;
 
 	// 弾の生成を有効
 	m_bShot = true;
+	// 現在のエネミー数
+	int nClear = 0;
 
 	// エネミーの更新
 	for (int y = 0; y < MAX_ENEMY_NUM_Y; y++)
@@ -139,6 +140,9 @@ void MakeEnemyScript::Update()
 		{
 			const auto& enemy = m_aEnemy[y * MAX_ENEMY_NUM_X + x].lock();
 			if (!enemy) continue;
+
+			// 存在する
+			nClear++;
 
 			// 座標
 			Vector3& pos = enemy->transform().lock()->m_pos;
@@ -155,12 +159,20 @@ void MakeEnemyScript::Update()
 			}
 
 			// 弾の生成
-			if (m_bShot && rand() % 100 < 10)
+			if (m_bShot && rand() % 100 < 5)
 			{
 				enemy->Shot(m_fBulletSpeed);
 				m_bShot = false;
 			}
 		}
+	}
+
+	// エネミーがいない
+	if (nClear == 0)
+	{
+		// ゲームクリア
+		const auto& obj = Instantiate<GameObject>();
+		obj->AddComponent<GameOverScript>();
 	}
 
 }
